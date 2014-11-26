@@ -1,50 +1,72 @@
-.well
-  .g-b.g-b--m--2of3.fl
-    .card.mbm.pbl
-      %h1 1. Cover / Intro
+.cover
+  .cover-feature
+    .cell.cell--s
+      %h1 Distributed Church Field Guide
       %p
-        This section should be similar to a book cover. Not in style and
-        presentation, but in content. A good "cover page" would be to
-        include this info:
-      %ul
-        %li.twb Logo
-        %li.twb Title
-        %li.twb Brief introduction
-        %li.twb Link to begin reading
-      %p
-        Then, include a call-to-action to help direct the reader in
-        the right direction.
-      = link_to 'Begin Reading', 'article'
-  .g-b.g-b--m--1of3.fr
-    .card.mbm
-      %h1.mbm 2. Table of Contents
-      %h4.mbm
-        = link_to 'Subtitle', 'article'
-      %ul.mbl
-        %li
-          = link_to 'Dapibus Condimentum Vulputate', 'article'
-        %li
-          = link_to 'Cras Ultricies Dolor', 'article'
-        %li
-          = link_to 'Quam Venenatis Ullamcorper', 'article'
-        %li
-          = link_to 'Amet Inceptos Ultricies', 'article'
-        %li
-          = link_to 'Fusce Dapibus Inceptos', 'article'
-      %h4.mbm
-        = link_to 'Subtitle', 'article'
-      %ul
-        %li
-          = link_to 'Dapibus Condimentum Vulputate', 'article'
-        %li
-          = link_to 'Cras Ultricies Dolor', 'article'
-        %li
-          = link_to 'Quam Venenatis Ullamcorper', 'article'
-        %li
-          = link_to 'Amet Inceptos Ultricies', 'article'
-        %li
-          = link_to 'Fusce Dapibus Inceptos', 'article'
-        %li
-          = link_to 'Pharetra Etiam Tortor', 'article'
-        %li
-          = link_to 'Nibh Adipiscing Mattis', 'article'
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+        id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus,
+        porta ac consectetur ac, vestibulum at eros.
+      %hr.hr.hr--red
+      %a.btn{href: "#"} Begin Reading
+  .cover-sidebar
+    %h2 Table of Contents
+    %a{href: '#'} Introduction
+
+    %h4 Section A
+    %h3 I Am = Us for Them, There
+    %ol
+      %li
+        %a{href: '#'} Distributed Church Identity
+      %li
+        %a{href: '#'} Guiding Principles of Distributed Church
+      %li
+        %a{href: '#'} Distributed Church Definition
+      %li
+        %a{href: '#'} Who Is My Distributed Church?
+      %li
+        %a{href: '#'} Unifying Attributes
+      %li
+        %a{href: '#'} The 4 S's
+      %li
+        %a{href: '#'} Complex Network of Churches
+      %li
+        %a{href: '#'} Elements of the Network
+
+    %h4 Section B
+    %h3 Distributing the Church
+    %ol
+      %li
+        %a{href: '#'} The Early Pattern of Church Planting
+      %li
+        %a{href: '#'} Evangelize
+      %li
+        %a{href: '#'} Establish
+      %li
+        %a{href: '#'} Entrust
+      %li
+        %a{href: '#'} Repeat
+      %li
+        %a{href: '#'} Marks of a Healthy Church
+
+    %h3 Additional Resources
+    %ol
+      %li
+        %a{href: '#'} Appendix 1: Children
+      %li
+        %a{href: '#'} Appendix 2: Key Questions to ask in Establishing a Church
+      %li
+        %a{href: '#'} Appendix 3: Expanded Discussion of the Gathering
+
+  .cover-download
+    .cell.cell--s
+      %h2 Download a Copy
+      .bucket
+        .bucket-media
+          PDF <span>14 Pages</span>
+        .bucket-content
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi
+            leo risus, porta ac consectetur ac, vestibulum at eros.
+          %hr.hr.hr--white
+          %a.btn{href: '#'} Download the PDF
