@@ -15,6 +15,18 @@ html
 
 body
   font-size: 100%
+  &:before
+    background: url(/assets/images/stripes.svg) repeat-x center
+    background-size: 34px 5px
+    content: ''
+    height: 5px
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 100
+    +respond-to($g-s)
+      background-size: 100px 15px
+      height: 15px
 
 // -------------------------------------
 //   Block Content
