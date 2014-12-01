@@ -7,11 +7,13 @@
 
 html
   background: #fff image-url('topography.svg') center
-  background-size: 650px 650px
+  background-size: 550px 550px
   color: $c-text
   font-family: $b-fontFamily
   font-size: $b-fontSize
   line-height: $b-lineHeight
+  +respond-to($g-s)
+    background-size: 700px 700px
 
 body
   font-size: 100%
