@@ -39,3 +39,24 @@
     position: absolute
     top: 100%
     z-index: 100
+  h2
+    font-size: 100%
+    margin: $b-space-m 0 $b-space-l
+    position: relative
+    &:after,
+    &:before
+      background: $red
+      content: ''
+      height: 4px
+      left: 0
+      position: absolute
+      width: 3em
+    &:after
+      bottom: -1em
+    &:before
+      top: -1.25em
+  li
+    &:last-child
+      margin-bottom: $b-space-l
+  ol
+    color: $c-subdue
