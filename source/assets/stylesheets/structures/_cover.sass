@@ -1,0 +1,41 @@
+// *************************************
+//
+//   Cover
+//   -> Controls homepage layout
+//
+// *************************************
+
+.cover
+  overflow: hidden
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Content ----- //
+
+.cover-content
+  box-sizing: border-box
+  float: left
+  width: calc(100% - 350px)
+
+// ----- Sidebar ----- //
+
+.cover-sidebar
+  background: $blue
+  box-sizing: border-box
+  color: $c-text-invert
+  float: right
+  font-size: 89%
+  padding: $b-space-m
+  position: relative
+  width: 350px
+  z-index: 200
+  &:after
+    @extend .stretch
+    background: $blue
+    content: ''
+    height: 10000px
+    position: absolute
+    top: 100%
+    z-index: 100

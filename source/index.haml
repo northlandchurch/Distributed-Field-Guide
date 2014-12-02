@@ -1,67 +1,72 @@
-.cell.cell--s
-  %h1= partial '/assets/images/fg-title.svg'
-  %p.tac
-    As you begin your journey to build the Distributed Church, you
-    may not know where to start. This field guide, rooted in
-    Gospel theology and philosophy, will give you the tools you
-    need to establish a Distributed Church.
-  %hr.hr.hr--red
-  %a.btn{href: "#"} Begin Reading
-
-.cell.cell--s
-  %h2 Download a Copy
-  .bucket
-    .bucket-media
-      PDF <span>14 Pages</span>
-    .bucket-content
+.cover
+  .cover-content
+    .cell.well.well--xl.pll.prl
+      %h1{"aria-label" => "Distributed Church Field Guide"}= partial '/assets/images/fg-title.svg'
+    .cell.cell--s.well.well--xl.mtf.pll.prl.tac
       %p
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi
-        leo risus, porta ac consectetur ac, vestibulum at eros.
-      %hr.hr.hr--white
-      %a.btn{href: '#'} Download the PDF
+        As you begin your journey to build the Distributed Church, you
+        may not know where to start. This field guide, rooted in
+        Gospel theology and philosophy, will give you the tools you
+        need to establish a Distributed Church.
+      %hr.hr.hr--red
+      = link_to 'Begin Reading', '/article', class: 'btn'
 
-%h2 Table of Contents
-%a{href: '#'} Introduction
-%h4 Section A
-%h3 I Am = Us for Them, There
-%ol
-  %li
-    %a{href: '#'} Distributed Church Identity
-  %li
-    %a{href: '#'} Guiding Principles of Distributed Church
-  %li
-    %a{href: '#'} Distributed Church Definition
-  %li
-    %a{href: '#'} Who Is My Distributed Church?
-  %li
-    %a{href: '#'} Unifying Attributes
-  %li
-    %a{href: '#'} The 4 S's
-  %li
-    %a{href: '#'} Complex Network of Churches
-  %li
-    %a{href: '#'} Elements of the Network
-%h4 Section B
-%h3 Distributing the Church
-%ol
-  %li
-    %a{href: '#'} The Early Pattern of Church Planting
-  %li
-    %a{href: '#'} Evangelize
-  %li
-    %a{href: '#'} Establish
-  %li
-    %a{href: '#'} Entrust
-  %li
-    %a{href: '#'} Repeat
-  %li
-    %a{href: '#'} Marks of a Healthy Church
-%h3 Additional Resources
-%ol
-  %li
-    %a{href: '#'} Appendix 1: Children
-  %li
-    %a{href: '#'} Appendix 2: Key Questions to ask in Establishing a Church
-  %li
-    %a{href: '#'} Appendix 3: Expanded Discussion of the Gathering
+    .row.row--b
+      .cell.well.well--xl
+        %h2 Download a Copy
+        .bucket
+          .bucket-media
+            PDF <span>14 Pages</span>
+          .bucket-content
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi
+              leo risus, porta ac consectetur ac, vestibulum at eros.
+            %hr.hr.hr--white
+            %a.btn{href: '#'} Download the PDF
+
+  .cover-sidebar
+    %h2.tal Table of Contents
+    %a{href: '#'} Introduction
+    %h4 Section A
+    %h3 I Am = Us for Them, There
+    %ol
+      %li
+        %a{href: '#'} Distributed Church Identity
+      %li
+        %a{href: '#'} Guiding Principles of Distributed Church
+      %li
+        %a{href: '#'} Distributed Church Definition
+      %li
+        %a{href: '#'} Who Is My Distributed Church?
+      %li
+        %a{href: '#'} Unifying Attributes
+      %li
+        %a{href: '#'} The 4 S's
+      %li
+        %a{href: '#'} Complex Network of Churches
+      %li
+        %a{href: '#'} Elements of the Network
+    %h4 Section B
+    %h3 Distributing the Church
+    %ol
+      %li
+        %a{href: '#'} The Early Pattern of Church Planting
+      %li
+        %a{href: '#'} Evangelize
+      %li
+        %a{href: '#'} Establish
+      %li
+        %a{href: '#'} Entrust
+      %li
+        %a{href: '#'} Repeat
+      %li
+        %a{href: '#'} Marks of a Healthy Church
+    %h3 Additional Resources
+    %ol
+      %li
+        %a{href: '#'} Appendix 1: Children
+      %li
+        %a{href: '#'} Appendix 2: Key Questions to ask in Establishing a Church
+      %li
+        %a{href: '#'} Appendix 3: Expanded Discussion of the Gathering
