@@ -1,0 +1,46 @@
+// *************************************
+//
+//   Paper
+//   -> Homepage download paper illo
+//
+// *************************************
+
+.paper
+  background: $c-background
+  color: $blue
+  font-size: 165%
+  font-weight: bold
+  padding: 55px 0
+  position: relative
+  text-align: center
+  width: 125px
+  span
+    color: $red
+    display: block
+    font-size: 30%
+    letter-spacing: 0.125em
+    text-transform: uppercase
+
+.paper::after
+  border: 20px solid transparent
+  border-right-color: darken($c-background, 7%)
+  border-top-color: darken($c-background, 7%)
+  content: ''
+  height: 0px
+  position: absolute
+  right: 0
+  top: 40px
+  width: 0px
+
+.paper::before
+  border: 20px solid transparent
+  border-bottom-color: $blue
+  border-left-color: $blue
+  border-right-color: $red
+  border-top-color: $red
+  content: ''
+  height: 0px
+  position: absolute
+  right: 0
+  top: 0
+  width: 0px
