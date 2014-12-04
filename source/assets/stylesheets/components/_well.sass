@@ -23,9 +23,15 @@
 // ----- Sizes ----- //
 
 .well--l
-  margin-bottom: $b-space-l
-  margin-top: $b-space-l
+  margin-bottom: $b-space-m
+  margin-top: $b-space-m
+  +respond-to($g-m)
+    margin-bottom: $b-space-xl
+    margin-top: $b-space-xl
 
 .well--xl
-  margin-bottom: $b-space-xl
-  margin-top: $b-space-xl
+  margin-bottom: $b-space-l
+  margin-top: $b-space-l
+  +respond-to($g-m)
+    margin-bottom: $b-space-xl
+    margin-top: $b-space-xl

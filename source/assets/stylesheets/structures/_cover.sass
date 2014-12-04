@@ -16,8 +16,10 @@
 
 .cover-content
   box-sizing: border-box
-  float: left
-  width: calc(100% - 375px)
+  width: 100%
+  +respond-to($g-l)
+    float: left
+    width: calc(100% - 375px)
 
 // ----- Sidebar ----- //
 
@@ -26,11 +28,13 @@
   box-sizing: border-box
   color: $c-text-invert
   float: right
-  margin-bottom: -$b-space
   padding: $b-space-m $b-space-m 0
   position: relative
-  width: 375px
+  width: 100%
   z-index: 200
+  +respond-to($g-l)
+    margin-bottom: -$b-space-l
+    width: 375px
   &:after
     @extend .stretch
     background: $blue
@@ -41,7 +45,6 @@
     z-index: 100
   a
     font-family: $b-fontFamily-heading
-    font-weight: 400
   h2
     font-size: 100%
     margin: $b-space-m 0 $b-space-l
@@ -62,6 +65,7 @@
     font-size: 140%
   h4
     color: $red
+    font-weight: 800
   li
     &:last-child
       margin-bottom: $b-space-l

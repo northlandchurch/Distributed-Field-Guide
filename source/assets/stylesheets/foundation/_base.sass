@@ -6,14 +6,16 @@
 // *************************************
 
 html
+  -webkit-font-smoothing: antialiased
   background: #fff image-url('topography.svg') center
   background-size: 550px 550px
   color: $c-text
   font-family: $b-fontFamily
-  font-size: $b-fontSize
+  font-size: 0.85 * $b-fontSize
   line-height: $b-lineHeight
   +respond-to($g-s)
     background-size: 700px 700px
+    font-size: $b-fontSize
 
 body
   font-size: 100%
