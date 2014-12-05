@@ -8,6 +8,7 @@
 .article
   margin: $b-space-l auto
   max-width: 45em
+  overflow: hidden
   padding-left: 1.5 * $b-space
   padding-right: 1.5 * $b-space
   +respond-to($g-s)
@@ -24,3 +25,9 @@
 // -------------------------------------
 //   Scaffolding
 // -------------------------------------
+
+.article-image
+  margin: 0 auto $b-space-m
+  max-width: $b-maxWidth-s
+  +respond-to($g-s)
+    margin: 0 auto $b-space-l
