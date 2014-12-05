@@ -1,0 +1,52 @@
+// *************************************
+//
+//   Pagination
+//   -> Article next/previous links
+//
+// *************************************
+
+.pagination
+  border-top: $b-border
+  margin: $b-space-m auto 0
+  padding-top: $b-space-m
+  text-align: justify
+  +respond-to($g-s)
+    margin: $b-space-l auto 0
+    padding-top: $b-space-l
+  &:after
+    content: ''
+    display: inline-block
+    width: 100%
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// .structure--modifier
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .structure.is-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+.pagination-next
+  @extend .btn
+
+.pagination-previous
+  @extend .btn
+  background: transparent
+  border: $b-border
+  color: $teal
+  &:hover
+    border-color: $teal
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// .structure-scaffolding
