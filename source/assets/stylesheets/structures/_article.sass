@@ -6,9 +6,20 @@
 // *************************************
 
 .article
+  margin: $b-space-l auto
+  max-width: 45em
+  padding-left: $b-space
+  padding-right: $b-space
+  +respond-to($g-s)
+    margin: $b-space-xl auto
+    padding-left: $b-space-l
+    padding-right: $b-space-l
+  +respond-to($g-m)
+    padding-left: 1.25 * $b-space-xl
+    padding-right: 1.25 * $b-space-xl
+    text-align: justify
   p
-    font-size: $b-fontSize-l
-    line-height: 1.5
+    font-size: 135%
 
 // -------------------------------------
 //   Scaffolding
