@@ -13,6 +13,15 @@
   +respond-to($g-s)
     margin: $b-space-l auto 0
     padding-top: $b-space-l
+  +respond-to($g-m)
+    border-top: 0
+    left: 1em
+    margin: 0
+    padding: 0
+    position: fixed
+    right: 1em
+    top: 50%
+    transform: translateY(-50%)
   &:after
     content: ''
     display: inline-block
@@ -36,12 +45,25 @@
 
 .pagination-next
   @extend .btn
+  +respond-to($g-m)
+    background: white
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjAgMjAiPjxwYXRoIGZpbGw9IiNFNkU2RTYiIGQ9Ik0xLjEgMTEuNWgxMmwtNSA0LjkgMi4yIDIuMkwxOSAxMGwtOC43LTguNi0yLjIgMi4xIDUgNC45aC0xMnYzLjF6Ii8+PC9zdmc+)
+    background-repeat: no-repeat
+    background-position: 50%
+    background-size: 60%
+    border: $b-border
+    height: 6em
+    padding: 0
+    text-indent: -10000px
+    width: 6em
 
 .pagination-previous
   @extend .btn
-  background: transparent
+  background: white
   border: $b-border
   color: $teal
+  +respond-to($g-m)
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjAgMjAiPjxwYXRoIGZpbGw9IiNFNkU2RTYiIGQ9Ik0xOC45IDguNWgtMTJsNS00LjktMi4yLTIuMkwxLjEgMTBsOC43IDguNiAyLjItMi4yLTUtNC45aDEydi0zeiIvPjwvc3ZnPg==)
   &:hover
     border-color: $teal
 
