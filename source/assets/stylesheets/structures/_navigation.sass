@@ -6,9 +6,7 @@
 // *************************************
 
 .navigation
-  @extend .stretch
-  position: fixed
-  z-index: 300
+  font-family: $b-fontFamily-heading
 
 // -------------------------------------
 //   Modifiers
@@ -33,9 +31,32 @@
 // -------------------------------------
 
 .navigation-content
+  -webkit-overflow-scrolling: touch
+  @extend .stretch
   background: $blue
+  color: white
   opacity: 0
+  overflow-y: scroll
+  padding: $b-space-m
+  position: fixed
   visibility: hidden
+  z-index: 300
+  +respond-to($g-s)
+    padding: $b-space-l
+  +respond-to($g-m)
+    padding: $b-space-xl (1.5 * $b-space-xl)
+  h2
+    +respond-to($g-m)
+      text-align: center
+
+.navigation-intro
+  display: block
+  font-weight: 800
+  letter-spacing: 0.125em
+  margin: 0 auto
+  text-align: center
+  text-transform: uppercase
+  width: 12em
 
 .navigation-toggle
   background: $teal
