@@ -7,16 +7,17 @@
 
 .pagination
   border-top: $b-border
+  margin-bottom: $b-space
   margin-left: 1.5 * $b-space
   margin-right: 1.5 * $b-space
-  margin-top: $b-space-m
+  margin-top: $b-space
   padding-top: $b-space-m
   text-align: justify
   +respond-to($g-s)
-    margin-bottom: $b-space
+    margin-bottom: $b-space-m
     margin-left: $b-space-l
     margin-right: $b-space-l
-    margin-top: $b-space-l
+    margin-top: $b-space-m
     padding-top: $b-space-l
   +respond-to($g-m)
     border-top: 0
@@ -27,6 +28,7 @@
     right: 1em
     top: 50%
     transform: translateY(-50%)
+    z-index: 100
   &:after
     content: ''
     display: inline-block
