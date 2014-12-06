@@ -18,7 +18,10 @@
 //   States
 // -------------------------------------
 
-// .structure.is-state
+.navigation.is-shown
+  .navigation-content
+    opacity: 1
+    visibility: visible
 
 // -------------------------------------
 //   Context
@@ -39,6 +42,7 @@
   overflow-y: scroll
   padding: $b-space-m
   position: fixed
+  transition: opacity 250ms $b-transition
   visibility: hidden
   z-index: 300
   +respond-to($g-s)
@@ -68,6 +72,10 @@
   position: fixed
   right: 1.5em
   width: 5em
+  z-index: 300
+  &::before
+    @extend .stretch
+    content: ''
   +respond-to($g-m)
     bottom: auto
     left: 1em

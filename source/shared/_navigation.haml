@@ -1,7 +1,9 @@
-.navigation
+.navigation.is-shown
   = link_to '#', class: 'navigation-toggle' do
     = partial '/assets/images/nav-open.svg'
   .navigation-content
+    = link_to '#', class: 'navigation-toggle' do
+      = partial '/assets/images/nav-close.svg'
     %h2.tal Table of Contents
     %a.navigation-intro{href: '#'} Introduction
     .g
