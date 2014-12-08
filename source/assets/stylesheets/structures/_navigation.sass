@@ -5,8 +5,7 @@
 //
 // *************************************
 
-.navigation
-  font-family: $b-fontFamily-heading
+// .navigation
 
 // -------------------------------------
 //   Modifiers
@@ -42,22 +41,49 @@
   overflow-y: scroll
   padding: $b-space-m
   position: fixed
-  transition: opacity 250ms $b-transition
+  transition: all 250ms $b-transition
   visibility: hidden
   z-index: 300
   +respond-to($g-s)
     padding: $b-space-l
   +respond-to($g-m)
-    padding: $b-space-xl (1.5 * $b-space-xl)
+    padding: $b-space-m (1.5 * $b-space-xl)
+  a
+    font-family: $b-fontFamily-heading
   h2
-    +respond-to($g-m)
-      text-align: center
+    font-size: 150%
+    margin: 0
+    position: relative
+    &:after,
+    &:before
+      background: $red
+      content: ''
+      height: 4px
+      left: 50%
+      position: absolute
+      transform: translateX(-1.5em)
+      width: 3em
+    &:after
+      bottom: -0.85em
+    &:before
+      top: -1em
+  h3
+    font-size: 140%
+  h4
+    color: $red
+    font-weight: 800
+  li
+    &:last-child
+      margin-bottom: $b-space-l
+  ol
+    color: $c-subdue
 
 .navigation-intro
   display: block
-  font-weight: 800
-  letter-spacing: 0.125em
-  margin: 0 auto
+  font-family: $b-fontFamily-heading
+  font-weight: 700
+  letter-spacing: 0.2em
+  margin: 3em auto
   text-align: center
   text-transform: uppercase
   width: 12em
