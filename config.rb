@@ -26,7 +26,7 @@ activate :automatic_image_sizes
 activate :blog do |blog|
   blog.layout = "layout_article"
   blog.paginate = true
-  blog.permalink = "/{section}/{title}"
+  blog.permalink = "{section}/{title}"
   blog.sources = "articles/{section}/{title}/article.html"
 end
 
