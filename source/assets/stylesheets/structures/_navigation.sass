@@ -19,8 +19,7 @@
 
 .navigation.is-shown
   .navigation-content
-    opacity: 1
-    visibility: visible
+    display: block
 
 // -------------------------------------
 //   Context
@@ -37,12 +36,10 @@
   @extend .stretch
   background: $blue
   color: white
-  opacity: 0
+  display: none
   overflow-y: scroll
-  padding: $b-space-m
+  padding: $b-space $b-space-m
   position: fixed
-  transition: all 250ms $b-transition
-  visibility: hidden
   z-index: 300
   +respond-to($g-s)
     padding: $b-space-l
@@ -54,19 +51,15 @@
     font-size: 150%
     margin: 0
     position: relative
-    &:after,
-    &:before
+    &:after
       background: $red
+      bottom: -0.85em
       content: ''
       height: 4px
       left: 50%
       position: absolute
       transform: translateX(-1.5em)
       width: 3em
-    &:after
-      bottom: -0.85em
-    &:before
-      top: -1em
   h3
     font-size: 140%
   h4
