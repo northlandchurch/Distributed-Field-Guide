@@ -3,7 +3,7 @@
     .article-image
       = partial '/assets/images/iam-typography.svg'
     %h4.mbm.tac
-      // = current_article.section
+      = current_article.data.sectiontitle
     %h1= current_article.title
     = yield
 

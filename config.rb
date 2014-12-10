@@ -26,8 +26,9 @@ activate :automatic_image_sizes
 activate :blog do |blog|
   blog.layout = "layout_article"
   blog.paginate = true
+  blog.per_page = 7
   blog.permalink = "{section}/{title}"
-  blog.sources = "articles/{section}/{title}/{year}-{month}-{day}.html"
+  blog.sources = "articles/{section}/{title}.html"
 end
 
 # ----- Directories for assets (needs to be activated after blog) ----- #
