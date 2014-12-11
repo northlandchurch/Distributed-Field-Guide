@@ -1,6 +1,7 @@
 ---
 title: Introduction
 date: 2014/01/01
+layout: 'layout_article'
 ---
 
 At the heart of it, a Distributed Church is about embracing the ministry and mission of God in the
