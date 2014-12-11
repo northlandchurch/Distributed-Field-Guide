@@ -7,47 +7,19 @@
 
 .pagination
   border-top: $b-border
-  margin-bottom: $b-space
-  margin-left: 1.5 * $b-space
-  margin-right: 1.5 * $b-space
-  margin-top: $b-space
   padding-top: $b-space-m
-  text-align: justify
   +respond-to($g-s)
-    margin-bottom: $b-space-m
-    margin-left: $b-space-l
-    margin-right: $b-space-l
-    margin-top: $b-space-m
     padding-top: $b-space-l
   +respond-to($g-m)
     border-top: 0
-    left: 1em
-    margin: 0
     padding: 0
-    position: fixed
-    right: 1em
-    top: 50%
-    transform: translateY(-50%)
-    z-index: 200
   &:after
     content: ''
     display: inline-block
     width: 100%
 
 // -------------------------------------
-//   Modifiers
-// -------------------------------------
-
-// .structure--modifier
-
-// -------------------------------------
-//   States
-// -------------------------------------
-
-// .structure.is-state
-
-// -------------------------------------
-//   Context
+//   Scaffolding
 // -------------------------------------
 
 .pagination-next,
@@ -61,6 +33,10 @@
   padding: 1em
   transition: all 350ms $b-transition
   width: 5em
+  +respond-to($g-m)
+    position: fixed
+    top: 50%
+    transform: translateY(-50%)
   svg
     fill: $c-border
     transition: all 350ms $b-transition
@@ -69,8 +45,12 @@
     svg
       fill: $teal
 
-// -------------------------------------
-//   Scaffolding
-// -------------------------------------
+.pagination-next
+  float: right
+  +respond-to($g-m)
+  right: 1em
 
-// .structure-scaffolding
+.pagination-previous
+  float: left
+  +respond-to($g-m)
+    left: 1em

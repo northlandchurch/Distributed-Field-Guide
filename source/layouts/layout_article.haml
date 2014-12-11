@@ -7,16 +7,16 @@
     %h1= current_article.title
     = yield
 
-  .pagination
-    - prev_article = current_article.previous_article
-    - if prev_article
-      = link_to prev_article.url, class: 'pagination-previous' do
-        = partial '/assets/images/arrow-left.svg'
+    .pagination
+      - prev_article = current_article.previous_article
+      - if prev_article
+        = link_to prev_article.url, class: 'pagination-previous' do
+          = partial '/assets/images/arrow-left.svg'
 
-    - next_article = current_article.next_article
-    - if next_article
-      = link_to next_article.url, class: 'pagination-next' do
-        = partial '/assets/images/arrow-right.svg'
+      - next_article = current_article.next_article
+      - if next_article
+        = link_to next_article.url, class: 'pagination-next' do
+          = partial '/assets/images/arrow-right.svg'
 
   = partial 'shared/navigation'
   = partial 'shared/footer'
