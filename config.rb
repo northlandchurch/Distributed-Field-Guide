@@ -60,10 +60,10 @@ end
 
 # Moves required Typography.com directory untouched
 
-class Move < Middleman::Extension
-  def after_build
-    FileUtils.cp_r('source/assets/fonts/', 'build/assets')
-  end
-end
-
-::Middleman::Extensions.register(:move, Move)
+# class Move < Middleman::Extension
+#   def after_build
+#     FileUtils.cp_r('source/assets/fonts/', 'build/assets')
+#   end
+# end
+#
+# ::Middleman::Extensions.register(:move, Move)
