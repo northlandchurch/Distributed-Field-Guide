@@ -20,9 +20,42 @@
   +respond-to($g-m)
     padding-left: 1.25 * $b-space-xl
     padding-right: 1.25 * $b-space-xl
-    text-align: justify
+    // text-align: justify
+  blockquote
+    font-size: 120%
+    font-style: italic
+    margin: 0
+    padding: 0 1em 1em
+    +respond-to($g-m)
+      padding: 0 2em 1em
+  h2
+    margin-top: $b-space-m
+  h3
+    font-size: $b-fontSize-m
+    letter-spacing: 0.2em
+    margin-top: $b-space-l
+    text-transform: uppercase
+  h4
+    font-family: $b-fontFamily
+    font-size: $b-fontSize-l
+    letter-spacing: 0
+    margin-top: $b-space-l
+    text-transform: none
+  li
+    color: darken($c-border, 35%)
+    font-size: 135%
+    strong
+      color: darken($c-border, 40%)
   p
     font-size: 135%
+  table
+    font-size: 125%
+  ul
+    margin-bottom: 2em
+    padding-left: 2em
+    +respond-to($g-m)
+      margin-bottom: 3em
+      padding-left: 3em
 
 // -------------------------------------
 //   Scaffolding
