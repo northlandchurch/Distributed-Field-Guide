@@ -27,8 +27,18 @@
     padding: 0 1em 1em
     +respond-to($g-m)
       padding: 0 2em 1em
+  h1, h2, h3, h4
+    line-height: 1.5
+  h1
+    font-size: $b-fontSize-l
+    +respond-to($g-s)
+      font-size: $b-fontSize-xl
   h2
-    margin-top: $b-space-m
+    font-size: 1.25 * $b-fontSize-m
+    margin-top: $b-space-l
+    +respond-to($g-s)
+      font-size: $b-fontSize-l
+      margin-top: $b-space-m
   h3
     font-size: $b-fontSize-m
     letter-spacing: 0.2em
@@ -36,19 +46,27 @@
     text-transform: uppercase
   h4
     font-family: $b-fontFamily
-    font-size: $b-fontSize-l
+    font-size: 1.25 * $b-fontSize-m
     letter-spacing: 0
     margin-top: $b-space-l
     text-transform: none
+    +respond-to($g-s)
+      font-size: $b-fontSize-l
   li
     color: darken($c-border, 35%)
-    font-size: 135%
+    font-size: 110%
+    +respond-to($g-m)
+      font-size: 125%
     strong
       color: darken($c-border, 40%)
   p
-    font-size: 135%
+    font-size: 110%
+    +respond-to($g-m)
+      font-size: 125%
   table
-    font-size: 125%
+    font-size: 100%
+    +respond-to($g-m)
+      font-size: 125%
   ul
     margin-bottom: 2em
     padding-left: 2em
@@ -67,6 +85,7 @@
     margin: 0 auto $b-space-l
 
 .article-subtitle
+  color: darken($c-border, 15%)
   font-family: $b-fontFamily-heading !important
   font-size: $b-fontSize-m !important
   letter-spacing: 0.125em !important
