@@ -38,14 +38,20 @@
 // ----- Content ----- //
 
 .bucket-content
-  display: table-cell
-  width: 10000px
+  display: block
+  text-align: center
+  width: 100%
+  +respond-to($g-s)
+    display: table-cell
+    text-align: left
+    width: 10000px
 
 // ----- Media ----- //
 
 .bucket-media
-  float: left
-  margin-right: $b-space-m
+  +respond-to($g-s)
+    float: left
+    margin-right: $b-space-m
   > img
     display: block
     max-width: none
