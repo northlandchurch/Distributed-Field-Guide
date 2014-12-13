@@ -4,6 +4,5 @@ source 'http://rubygems.org'
 
 gem 'middleman'
 gem 'middleman-autoprefixer'
-gem 'middleman-blog'
 gem 'middleman-gh-pages'
 gem 'middleman-livereload'
