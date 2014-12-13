@@ -3,20 +3,20 @@
     .article-image
       = partial '/assets/images/iam-typography.svg'
     %h4.article-subtitle
-      = current_article.data.sectiontitle
-    %h1= current_article.title
+      = current_page.data.sectiontitle
+    %h1= current_page.data.title
     = yield
 
-    .pagination
-      - prev_article = current_article.previous_article
-      - if prev_article
-        = link_to prev_article.url, class: 'pagination-previous' do
-          = partial '/assets/images/arrow-left.svg'
-
-      - next_article = current_article.next_article
-      - if next_article
-        = link_to next_article.url, class: 'pagination-next' do
-          = partial '/assets/images/arrow-right.svg'
+    -# .pagination
+    -#   - prev_article = current_page.previous_article
+    -#   - if prev_article
+    -#     = link_to prev_article.url, class: 'pagination-previous' do
+    -#       = partial '/assets/images/arrow-left.svg'
+    -#
+    -#   - next_article = current_page.next_article
+    -#   - if next_article
+    -#     = link_to next_article.url, class: 'pagination-next' do
+    -#       = partial '/assets/images/arrow-right.svg'
 
   = partial 'shared/navigation'
   = partial 'shared/footer'
