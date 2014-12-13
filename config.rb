@@ -56,7 +56,7 @@ configure :build do
   activate :relative_assets
   set :relative_links, true
   activate :gzip
-  activate :move
+  # activate :move
 end
 
 # Moves required Typography.com directory untouched
