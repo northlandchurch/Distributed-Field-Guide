@@ -28,7 +28,7 @@ activate :blog do |blog|
   blog.paginate = true
   blog.per_page = 7
   blog.permalink = "{section}/{title}"
-  blog.sources = "articles/{section}/{title}.html"
+  blog.sources = "articles/{title}.html"
 end
 
 # ----- Directories for assets (needs to be activated after blog) ----- #
