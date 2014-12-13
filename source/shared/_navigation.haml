@@ -6,8 +6,7 @@
       = partial '/assets/images/nav-close.svg'
     %a.navigation-home{href: '/'} Homepage
     %h2 Table of Contents
-    - blog.articles.reverse[0..0].each do |article|
-      %a.navigation-intro.mbl{href: "#{article.url}"}= article.title
+    %a.navigation-intro.mbl{href: "../introduction/"} Introduction
 
     .cell
       .g
@@ -15,20 +14,17 @@
           %h4 Section A
           %h3 I Am = Us for Them, There
           %ol
-            - blog.articles.reverse[1..8].each do |article|
-              %li
-                %a{href: "#{article.url}"}= article.title
+            %li
+              %a{href: "#"} Sample
 
         .g-b.g-b--s--1of2
           %h4 Section B
           %h3 Distributing the Church
           %ol
-            - blog.articles.reverse[9..14].each do |article|
-              %li
-                %a{href: "#{article.url}"}= article.title
+            %li
+              %a{href: "#"} Sample
 
           %h3 Additional Resources
           %ol
-            - blog.articles.reverse[15..18].each do |article|
-              %li
-                %a{href: "#{article.url}"}= article.title
+            %li
+              %a{href: "#"} Sample
