@@ -9,7 +9,8 @@
         Gospel theology and philosophy, will give you the tools you
         need to establish a Distributed Church.
       %hr.hr.hr--red
-      = link_to 'Begin Reading', '/introduction/introduction', class: 'btn'
+      - blog.articles.reverse[0..0].each do |article|
+        = link_to 'Begin Reading', article.url, class: 'btn'
 
     .row.row--b
       .cell.well.well--xl.pll.prl
@@ -30,13 +31,13 @@
     .g
       .g-b.g-b--s--1of2.g-b.g-b--l--1of1
         - blog.articles.reverse[0..0].each do |article|
-          %a.cover-intro{href: "#{article.url}"}= article.title
+          = link_to article.title, article.url, class: 'cover-intro'
         %h4 Section A
         %h3 I Am = Us for Them, There
         %ol
           - blog.articles.reverse[1..8].each do |article|
             %li
-              %a{href: "#{article.url}"}= article.title
+              = link_to article.title, article.url
 
       .g-b.g-b--s--1of2.g-b.g-b--l--1of1
         %h4 Section B
@@ -44,12 +45,12 @@
         %ol
           - blog.articles.reverse[9..14].each do |article|
             %li
-              %a{href: "#{article.url}"}= article.title
+              = link_to article.title, article.url
 
         %h3 Additional Resources
         %ol
           - blog.articles.reverse[15..18].each do |article|
             %li
-              %a{href: "#{article.url}"}= article.title
+              = link_to article.title, article.url
 
 = partial 'shared/footer'
