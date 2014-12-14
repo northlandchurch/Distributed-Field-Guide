@@ -8,12 +8,13 @@
     = yield
 
     .pagination
-      - prev_article = current_article.previous_article
+      -# Flip prev and next because of reader format
+      - prev_article = current_article.next_article
       - if prev_article
         = link_to prev_article.url, class: 'pagination-previous' do
           = partial '/assets/images/arrow-left.svg'
 
-      - next_article = current_article.next_article
+      - next_article = current_article.previous_article
       - if next_article
         = link_to next_article.url, class: 'pagination-next' do
           = partial '/assets/images/arrow-right.svg'
