@@ -34,7 +34,7 @@
         %h4 Section A
         %h3 I Am = Us for Them, There
         %ol
-          - blog.articles.each do |article|
+          - blog.articles[1..8].each do |article|
             %li
               = link_to article.title, article.url
 
@@ -42,13 +42,13 @@
         %h4 Section B
         %h3 Distributing the Church
         %ol
-          - blog.articles.each do |article|
+          - blog.articles[9..14].each do |article|
             %li
               = link_to article.title, article.url
 
         %h3 Additional Resources
         %ol
-          - blog.articles.each do |article|
+          - blog.articles[15..18].each do |article|
             %li
               = link_to article.title, article.url
 
