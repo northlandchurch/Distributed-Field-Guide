@@ -17,6 +17,8 @@ set :fonts_dir, 'assets/fonts'
 
 activate :automatic_image_sizes
 
+set :strip_index_file = true
+
 # --------------------------------------
 #   Content
 # --------------------------------------
@@ -51,5 +53,5 @@ ignore 'assets/fonts/*'
 configure :build do
   activate :minify_css
   activate :minify_javascript
-  set :relative_links, true
+  activate :relative_assets
 end
