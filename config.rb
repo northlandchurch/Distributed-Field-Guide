@@ -27,7 +27,7 @@ activate :blog do |blog|
   blog.layout = "layout_article"
   blog.paginate = true
   blog.per_page = 7
-  blog.permalink = "{section}/{title}"
+  blog.permalink = "{title}"
   blog.sources = "articles/{title}.html"
 end
 
