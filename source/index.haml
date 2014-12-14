@@ -38,9 +38,10 @@
         %h4 Section A
         %h3 I Am = Us for Them, There
         %ol
-          - blog.articles[10..17].reverse.each do |article|
-            %li
-              = link_to article.title, article.url
+          - blog.articles.each_with_index do |article, index|
+            - if index >= 10 && index <= 17
+              %li
+                = link_to article.title, article.url
 
       .g-b.g-b--s--1of2.g-b.g-b--l--1of1
         %h4 Section B
