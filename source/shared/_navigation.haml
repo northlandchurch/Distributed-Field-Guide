@@ -6,9 +6,7 @@
       = partial '/assets/images/nav-close.svg'
     %a.navigation-home{href: '/'} Homepage
     %h2 Table of Contents
-    - blog.articles.each_with_index do |article, index|
-      - if index == 18
-        %a.navigation-intro.mbl{href: "#{article.url}"}= article.title
+    = link_to blog.articles.first.title, blog.articles.first.url, class: 'navigation-intro mbl'
 
     .cell
       .g
@@ -16,20 +14,20 @@
           %h4 Section A
           %h3 I Am = Us for Them, There
           %ol
-            - blog.articles[10..17].reverse.each do |article|
+            - blog.articles[1..8].each do |article|
               %li
-                %a{href: "#{article.url}"}= article.title
+                = link_to article.title, article.url
 
         .g-b.g-b--s--1of2
           %h4 Section B
           %h3 Distributing the Church
           %ol
-            - blog.articles[4..9].reverse.each do |article|
+            - blog.articles[9..14].each do |article|
               %li
-                %a{href: "#{article.url}"}= article.title
+                = link_to article.title, article.url
 
           %h3 Additional Resources
           %ol
-            - blog.articles[0..3].reverse.each do |article|
+            - blog.articles[15..18].each do |article|
               %li
-                %a{href: "#{article.url}"}= article.title
+                = link_to article.title, article.url
