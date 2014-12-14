@@ -52,8 +52,19 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :relative_assets
+  activate :move
   set :relative_links, true
 end
+
+# Moves required Typography.com directory untouched
+
+class Move < Middleman::Extension
+  def after_build
+    FileUtils.cp_r('source/assets/fonts/', 'build/assets')
+  end
+end
+
+::Middleman::Extensions.register(:move, Move)
 
 # ----- Deploying ----- #
 
