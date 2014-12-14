@@ -6,7 +6,7 @@
       = partial '/assets/images/nav-close.svg'
     %a.navigation-home{href: '/'} Homepage
     %h2 Table of Contents
-    = link_to blog.articles.first.title, blog.articles.first.url, class: 'navigation-intro mbl'
+    = link_to blog.articles.first.title, blog.articles.first, class: 'navigation-intro mbl'
 
     .cell
       .g
@@ -16,7 +16,7 @@
           %ol
             - blog.articles[1..8].each do |article|
               %li
-                = link_to article.title, article.url
+                = link_to article.title, article
 
         .g-b.g-b--s--1of2
           %h4 Section B
@@ -24,10 +24,10 @@
           %ol
             - blog.articles[9..14].each do |article|
               %li
-                = link_to article.title, article.url
+                = link_to article.title, article
 
           %h3 Additional Resources
           %ol
             - blog.articles[15..18].each do |article|
               %li
-                = link_to article.title, article.url
+                = link_to article.title, article
