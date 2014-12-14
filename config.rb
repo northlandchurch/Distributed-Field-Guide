@@ -17,8 +17,6 @@ set :fonts_dir, 'assets/fonts'
 
 activate :automatic_image_sizes
 
-set :strip_index_file = true
-
 # --------------------------------------
 #   Content
 # --------------------------------------
