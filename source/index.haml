@@ -1,55 +1,91 @@
-.cover
-  .cover-content
-    .cell.well.well--xl.mbf.pll.prl
-      = partial '/assets/images/fg-title.svg'
-    .cell.cell--s.well.well--xl.pll.prl.tac
-      %p
-        As you begin your journey to build the Distributed Church, you
-        may not know where to start. This field guide, rooted in
-        Gospel theology and philosophy, will give you the tools you
-        need to establish a Distributed Church.
-      %hr.hr.hr--red
-      = link_to 'Begin Reading', blog.articles.first, class: 'btn'
-
-    .row.row--b
-      .cell.well.well--xl.pll.prl
-        %h2.h1 Download a Copy
-        .bucket.bucket--flag
-          .bucket-media.paper
-            PDF
-            %span 14 Pages
-          .bucket-content
-            %p
-              For your convenience, this field guide is also available
-              in a PDF format for printing or offline viewing. Simply
-              click the link below to download it.
-            %hr.hr.hr--invert
-            %a.btn{href: 'assets/downloads/fg-v2.5.pdf', download: "distributed-church-field-guide-v2.5.pdf"} Download the PDF
-
-  .cover-sidebar
-    %h2.tal Table of Contents
+.row
+  .cell.cell--xs.mtxl
+    = partial '/assets/images/logo.svg'
+  .cell.cell--l.mbl.mtl
+    %h1 A Church for Others
     .g
-      .g-b.g-b--s--1of2.g-b.g-b--l--1of1
-        = link_to blog.articles.first.title, blog.articles.first, class: 'cover-intro'
-        %h4 Section A
-        %h3 I Am = Us for Them, There
-        %ol
-          - blog.articles[1..8].each do |article|
-            %li
-              = link_to article.title, article
+      .g-b.g-b--m--2of3
+        .has-video.mbl
+          <iframe class="video" width="560" height="315" src="//www.youtube.com/embed/qpK1GzwO-vU?controls=0&showinfo=0" frameborder="0"></iframe>
+      .g-b.g-b--m--1of3
+        %p
+          A Distributed Church is most simply understood as a group of
+          people following Jesus together and living out the mission
+          of Jesus in their everyday lives. When people do this
+          together they form the church right in the context of where
+          they are now.
+        %hr.hr.hr--red
+        %p= link_to 'Learn More', 'field-guide', class: 'btn'
 
-      .g-b.g-b--s--1of2.g-b.g-b--l--1of1
-        %h4 Section B
-        %h3 Distributing the Church
-        %ol
-          - blog.articles[9..14].each do |article|
-            %li
-              = link_to article.title, article
+.row.row--c
+  .cell.cell--l.mbm.mtxl
+    %h1.tci Getting Started
+    .g
+      .g-b.g-b--m--1of4.mbl.tac
+        %a.number{href: "#"} 1
+        %h4.tci.tsm
+          Intro to Distributing the Church
+        %p.tci.tss
+          Discover God’s plan to show the world His love through&nbsp;you.
+      .g-b.g-b--m--1of4.mbl.tac
+        %a.number{href: "field-guide"} 2
+        %h4.tci.tsm
+          Read the Field Guide
+        %p.tci.tss
+          Read the field guide with family and friends to create
+          your&nbsp;plan.
+      .g-b.g-b--m--1of4.mbl.tac
+        %a.number{href: "#"} 3
+        %h4.tci.tsm
+          Launch a Community
+        %p.tci.tss
+          Connect with other people on this journey for training
+          and&nbsp;support.
+      .g-b.g-b--m--1of4.mbl.tac
+        %a.number{href: "#"} 4
+        %h4.tci.tsm
+          Be the Church
+        %p.tci.tss
+          Distribute the church everywhere, everyday.
 
-        %h3 Additional Resources
-        %ol
-          - blog.articles[15..18].each do |article|
-            %li
-              = link_to article.title, article
+.row.row--b
+  .cell.cell--l.mbxl.mtxl
+    %h1.tci A Church In The Image of Love
+    .columns.columns--l
+      %p
+        At the heart of it, a Distributed Church is about love. It's
+        about God's love for you, and his design for you to love
+        others. God has strategically placed you in the context where
+        you are right now: the web of relationships you already have;
+        the neighborhood where you already live; the place where you
+        already work. A Distributed Church is a way to bring the
+        church, and thus the love of God, to those people.
+      %p
+        A Distributed Church is also about the way God has uniquely
+        created you - with specific gifts for specific purposes - to
+        help others experience His love. Your abilities, the way you
+        think, even the things you struggle with, all point toward
+        God's design and deliberate plan. You have been designed for
+        a mission unlike any other in this world. It's a mission that
+        you can't accomplish without God's power, or without other
+        Christians alongside you.
+      %p
+        Are you interested in learning more? We would love to help
+        you. Together we can form the church outside the walls of a
+        building and bring God's love to the world.
+
+.row
+  .cell.cell--l.well.well--l.mbl
+    %h1 Next Steps
+    .g
+      .g-b.g-b--m--3of5
+        .has-video.mbl
+          <iframe class="video" width="560" height="315" src="//www.youtube.com/embed/qpK1GzwO-vU?controls=0&showinfo=0" frameborder="0"></iframe>
+      .g-b.g-b--m--2of5
+        %p= lorem.words(23).capitalize + '.'
+        %hr.hr.hr--red
+        %p= link_to 'Talk With Someone', '#', class: 'btn db tac'
+        %p= link_to 'Attend Overview Session', '#', class: 'btn db tac'
+        %p= link_to 'Join Launch Community', '#', class: 'btn db tac'
 
 = partial 'shared/footer'
