@@ -1,0 +1,55 @@
+.cover
+  .cover-content
+    .cell.well.well--xl.mbf.pll.prl
+      = partial '/assets/images/fg-title.svg'
+    .cell.cell--s.well.well--xl.pll.prl.tac
+      %p
+        As you begin your journey to build the Distributed Church, you
+        may not know where to start. This field guide, rooted in
+        Gospel theology and philosophy, will give you the tools you
+        need to establish a Distributed Church.
+      %hr.hr.hr--red
+      = link_to 'Begin Reading', blog.articles.first, class: 'btn'
+
+    .row.row--b
+      .cell.well.well--xl.pll.prl
+        %h2.h1 Download a Copy
+        .bucket.bucket--flag
+          .bucket-media.paper
+            PDF
+            %span 14 Pages
+          .bucket-content
+            %p
+              For your convenience, this field guide is also available
+              in a PDF format for printing or offline viewing. Simply
+              click the link below to download it.
+            %hr.hr.hr--invert
+            %a.btn{href: 'assets/downloads/fg-v2.5.pdf', download: "distributed-church-field-guide-v2.5.pdf"} Download the PDF
+
+  .cover-sidebar
+    %h2.tal Table of Contents
+    .g
+      .g-b.g-b--s--1of2.g-b.g-b--l--1of1
+        = link_to blog.articles.first.title, blog.articles.first, class: 'cover-intro'
+        %h4 Section A
+        %h3 I Am = Us for Them, There
+        %ol
+          - blog.articles[1..8].each do |article|
+            %li
+              = link_to article.title, article
+
+      .g-b.g-b--s--1of2.g-b.g-b--l--1of1
+        %h4 Section B
+        %h3 Distributing the Church
+        %ol
+          - blog.articles[9..14].each do |article|
+            %li
+              = link_to article.title, article
+
+        %h3 Additional Resources
+        %ol
+          - blog.articles[15..18].each do |article|
+            %li
+              = link_to article.title, article
+
+= partial 'shared/footer'

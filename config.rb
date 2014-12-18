@@ -26,6 +26,7 @@ activate :automatic_image_sizes
 activate :blog do |blog|
   blog.layout = "layout_article"
   blog.permalink = "{title}"
+  blog.prefix = "field-guide"
   blog.sources = "articles/{title}.html"
 end
 
