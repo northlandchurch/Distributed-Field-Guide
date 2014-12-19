@@ -1,7 +1,13 @@
+.navigation.navigation--overview
+  .cell.cell--l.pls.prs
+    .navigation-logo
+      = partial '/assets/images/logo-horizontal.svg'
+    %nav.navigation-links.tar
+      = link_to "Get Started", "#getting-started"
+      = link_to "Field Guide", "field-guide", class: "btn"
+
 .row
-  .cell.cell--xs.mtxl
-    = partial '/assets/images/logo.svg'
-  .cell.cell--l.mbl.mtl
+  .cell.cell--l
     %h1 A Church for Others
     .g
       .g-b.g-b--m--2of3
@@ -18,7 +24,7 @@
         %p= link_to 'Learn More', 'field-guide', class: 'btn'
 
 .row.row--c
-  .cell.cell--l.mbm.mtxl
+  .cell.cell--l.well.well--l.mbl
     %h1.tci Getting Started
     .g
       .g-b.g-b--m--1of4.mbl.tac
@@ -49,7 +55,7 @@
           Distribute the church everywhere, everyday.
 
 .row.row--b
-  .cell.cell--l.mbxl.mtxl
+  .cell.cell--l.well.well--l
     %h1.tci A Church In The Image of Love
     .columns.columns--l
       %p
@@ -75,7 +81,7 @@
         building and bring God's love to the world.
 
 .row
-  .cell.cell--l.well.well--l.mbl
+  .cell.cell--l.well.well--l
     %h1 Next Steps
     .g
       .g-b.g-b--m--3of5

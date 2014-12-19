@@ -11,7 +11,13 @@
 //   Modifiers
 // -------------------------------------
 
-// .structure--modifier
+.navigation--overview
+  background: white
+  border-bottom: $b-border
+  overflow: hidden
+  margin-bottom: $b-space-l
+  padding-bottom: $b-space-m
+  padding-top: 1.65 * $b-space-m
 
 // -------------------------------------
 //   States
@@ -94,6 +100,34 @@
   text-align: center
   text-transform: uppercase
   width: 12em
+
+.navigation-links
+  display: block
+  position: relative
+  text-align: center
+  top: 0.3em
+  width: 100%
+  +respond-to($g-s)
+    display: table-cell
+    text-align: left
+    width: 10000px
+  a
+    font-family: $b-fontFamily-heading
+    font-size: 75%
+    font-weight: 800
+    letter-spacing: 0.2em
+    margin-left: 2em
+    text-transform: uppercase
+
+.navigation-logo
+  width: 15em
+  +respond-to($g-m)
+    float: left
+    margin-right: $b-space-m
+    width: 20em
+  > img
+    display: block
+    max-width: none
 
 .navigation-toggle
   background: $teal
