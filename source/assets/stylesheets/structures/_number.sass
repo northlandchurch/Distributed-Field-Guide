@@ -6,18 +6,14 @@
 // *************************************
 
 .number
-  border: $b-borderStyle $b-borderWidth lighten($blue,10%)
-  border-radius: 50%
   color: $c-text-invert
-  display: block
-  font-family: $b-fontFamily-heading
-  font-size: 250%
+  font-size: 325%
   font-weight: 800
-  height: 3em
-  line-height: 2.9
-  margin: 0 auto $b-space
+  line-height: 1
+  margin-bottom: 0.5em
   text-align: center
-  width: 3em
+  +respond-to($g-s)
+    text-align: left
 
 // -------------------------------------
 //   Modifiers
