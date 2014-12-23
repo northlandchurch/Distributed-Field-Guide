@@ -3,67 +3,27 @@
     .navigation-logo
       = partial '/assets/images/logo-horizontal.svg'
     %nav.navigation-links
-      = link_to "Get&nbsp;Started", "#get-started"
-      = link_to "About", "#about"
       = link_to "Next&nbsp;Steps", "#next-steps"
+      = link_to "Field&nbsp;Guide", "field-guide"
+      = link_to "Attend&nbsp;a&nbsp;Session", "#", class: "btn"
 
-.row.well.well--xl
-  .cell.cell--l
-    %h1 A Church for Others
-  .cell.cell--s.tac
-    %p
-      A Distributed Church is most simply understood as a group of
-      people following Jesus together and living out the mission
-      of Jesus in their everyday lives. When people do this
-      together they form the church right in the context of where
-      they are now.
-    %hr.hr.hr--red
-    %p= link_to 'Get Started', '#get-started', class: 'btn'
-
-.row.row--c#get-started
-  .cell.cell--l.well.well--xl.mbl
-    %h1.tci Get Started
-
-    .mbl.tac
-      .number.tac{href: "#"} 1.
-      %h4.tci.tsm
-        Intro to Distributing the Church
-      %p.mbl.tci
-        Discover God’s plan to show the world His love through&nbsp;you.
-      .cell
-        .has-video
-          <iframe class="video" width="560" height="315" src="//www.youtube.com/embed/qpK1GzwO-vU?controls=0&showinfo=0" frameborder="0"></iframe>
-
-    %hr.hr.hr--subdue
-
-    .mbl.tac
-      .number.tac{href: "#"} 2.
-      %h4.tci.tsm
-        Read the Field Guide
-      %p.tci
-        Read the Field Guide with friends and family to create your plan.
-      %p
-        = link_to "Read the Field Guide", "field-guide", class: "btn"
-
-    %hr.hr.hr--subdue
-
+.row.well
+  .cell.cell--l.pbm
+    %h2 Start the Journey Toward <span class="tce">Being</span> the&nbsp;Church
+    %hr.hr.hr--border.mbl.mtl
     .g
-      .g-b.g-b--m--1of2
-        .mbl.tac
-          .number.tac{href: "#"} 3.
-          %h4.tci.tsm
-            Launch Community
-          %p.tci
-            Connect with other people on this journey for&nbsp;training&nbsp;and&nbsp;support.
-        %hr.hr.hr--subdue.rhl
-      .g-b.g-b--m--1of2
-        .mbl.tac
-          .number.tac{href: "#"} 4.
-          %h4.tci.tsm
-            Be the Church
-          %p.tci
-            Distribute the church everywhere, everyday.
-
+      .g-b.g-b--m--2of3
+        .has-video.mbm
+          <iframe class="video" width="560" height="315" src="//www.youtube.com/embed/hAii16i_d3M?controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+      .g-b.g-b--m--1of3
+        %p.mtm
+          A Distributed Church is most simply understood as a group of
+          people following Jesus together and living out the mission
+          of Jesus in their everyday lives. When people do this
+          together they form the church right in the context of where
+          they are now.
+        %hr.hr.hr--border
+        %p= link_to 'Get Started', '#get-started', class: 'btn'
 
 .row.row--b#about
   .cell.cell--l.well.well--xl
@@ -91,6 +51,90 @@
         you. Together we can form the church outside the walls of a
         building and bring God's love to the world.
 
+.row.row--c#get-started
+  .cell.cell--l.well.well--xl
+    %h1.tci Get Started
+
+    .mbl.tac
+      .number.tac{href: "#"} 1.
+      %h4.tci.tsm
+        Intro to Distributing the Church
+      .cell
+        %p.tci
+          Discover God’s plan to show the world His love through you.
+          Intro Sessions are 60 minute sessions to help you discover
+          more about how to live out your faith in this culture of
+          connection. You’ll learn what a distributed church is and how
+          to begin forming one in your context. Intro to Distributing
+          the Church is offered online&nbsp;and&nbsp;in&nbsp;person.
+        %p
+          = link_to "Attend an Intro Session", "#", class: "btn"
+
+    %hr.hr.hr--subdue
+
+    .mbl.tac
+      .number.tac{href: "#"} 2.
+      %h4.tci.tsm
+        Read the Field Guide
+      .cell
+        %p.tci
+          Read the Field Guide with friends and family to begin to map
+          out a plan. The Field Guide is full of the basic philosophy,
+          practical steps, and key questions to direct you as you form
+          your existing relationships into a&nbsp;distributed&nbsp;church.
+        %p
+          = link_to "Read the Field Guide", "field-guide", class: "btn"
+
+    %hr.hr.hr--subdue
+
+    .mbl.tac
+      .number.tac{href: "#"} 3.
+      %h4.tci.tsm
+        Launch Community
+      .cell
+        %p.tci
+          Connect with other people on this journey for training and
+          support. A Launch Community will link you with a mentor that
+          can provide the training and encouragement you need as you
+          get started. It also will connect you with other people
+          starting distributed churches.
+        %p
+          = link_to "Join a Community", "#", class: "btn"
+
+    %hr.hr.hr--subdue
+
+    .mbl.tac
+      .number.tac{href: "#"} 4.
+      %h4.tci.tsm
+        Be the Church
+      .cell
+        %p.tci
+          Distributed the church everywhere, every day. Join the
+          movement of people forming the church outside of a building,
+          in the midst of their everyday lives. Already on this
+          journey? Great! Let us know so that we can stay connected&nbsp;with&nbsp;you.
+        %p
+          = link_to "Stay Connected", "#", class: "btn"
+
+.row.row--b#about
+  .cell.cell--l.well.well--xl
+    %h1.mbf.tci
+      1st C. Snapshot
+    %h2.mts.tci
+      Acts 2:42-47
+    .columns.columns--l
+      %p
+        They devoted themselves to the apostles’ teaching and to
+        fellowship, to the breaking of bread and to prayer. Everyone
+        was filled with awe at the many wonders and signs performed
+        by the apostles. All the believers were together and had
+        everything in common. They sold property and possessions to
+        give to anyone who had need. Every day they continued to meet
+        together in the temple courts. They broke bread in their homes
+        and ate together with glad and sincere hearts, praising God
+        and enjoying the favor of all the people. And the Lord added
+        to their number daily those who were being saved.
+
 .row#next-steps
   .cell.cell--l.well.well--xl
     %h1 Next Steps
@@ -98,25 +142,21 @@
       .g-b.g-b--m--1of3
         %h4.tsm Talk with Someone
         %p.tss
-          Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-          Etiam porta sem malesuada magna mollis euismod. Etiam porta
-          sem malesuada magna mollis euismod.
+          Have some questions and think a conversation would clear
+          some things up? We’d be happy to talk with you.
         %p= link_to 'Talk With Someone', '#', class: 'btn db tac tss'
         %hr.hr.hr--border2.rhl
       .g-b.g-b--m--1of3
         %h4.tsm Attend Overview Session
         %p.tss
-          Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-          Etiam porta sem malesuada magna mollis euismod. Etiam porta
-          sem malesuada magna mollis euismod.
+          This is the best place to get your bearings in this new way
+          (or really old way) of living as the church.
         %p= link_to 'Attend Session', '#', class: 'btn db tac tss'
         %hr.hr.hr--border2.rhl
       .g-b.g-b--m--1of3
         %h4.tsm Join a Launch Community
         %p.tss
-          Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-          Etiam porta sem malesuada magna mollis euismod. Etiam porta
-          sem malesuada magna mollis euismod.
+          Ready to get started? We want to come alongside you as you do.
         %p= link_to 'Join a Community', '#', class: 'btn db tac tss'
 
 = partial 'shared/footer'
