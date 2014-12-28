@@ -30,14 +30,10 @@
     display: block
 
 // -------------------------------------
-//   Context
-// -------------------------------------
-
-// .has-structure
-
-// -------------------------------------
 //   Scaffolding
 // -------------------------------------
+
+// ----- Content ----- //
 
 .navigation-content
   -webkit-overflow-scrolling: touch
@@ -79,6 +75,8 @@
   ol
     color: $c-subdue
 
+// ----- Home ----- //
+
 .navigation-home
   color: $red
   display: block
@@ -93,6 +91,8 @@
   &:focus
     color: lighten($red, 10%)
 
+// ----- Intro ----- //
+
 .navigation-intro
   display: block
   font-family: $b-fontFamily-heading
@@ -102,6 +102,8 @@
   text-align: center
   text-transform: uppercase
   width: 12em
+
+// ----- Links ----- //
 
 .navigation-links
   display: block
@@ -128,6 +130,8 @@
     +respond-to($g-m)
       margin-left: 1em
 
+// ----- Logo ----- //
+
 .navigation-logo
   margin-bottom: 1em
   margin-left: auto
@@ -137,6 +141,8 @@
     float: left
     margin-bottom: 0
     margin-right: $b-space-m
+
+// ----- Toggle ----- //
 
 .navigation-toggle
   background: $teal
