@@ -1,7 +1,7 @@
 // -------------------------------------
 //
-//   Navigation
-//   -> Controls navigation toggle
+//   Smooth Scrolling
+//   -> Navigatino on overview page
 //
 // -------------------------------------
 
@@ -23,6 +23,13 @@ function smoothScroll() {
 window.onload = function(event) {
   smoothScroll();
 };
+
+// -------------------------------------
+//
+//   Navigation
+//   -> Controls navigation toggle
+//
+// -------------------------------------
 
 function toggleNav(event) {
   var clicked = event.target;
