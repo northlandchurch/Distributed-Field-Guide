@@ -16,7 +16,7 @@ The source code is available in the `source` folder. It is build with Haml (for 
 
 The source code is compiled into the `build` folder whenever you run `middleman build`. This single action creates the entire static website. More details for this specific project will be available soon.
 
-## Deploying
+### Deploying
 
 Because this site is hosted with GitHub Pages, updating the production server is quite easy.
 
