@@ -18,4 +18,8 @@ The source code is compiled into the `build` folder whenever you run `middleman 
 
 ## Deploying
 
-More info will be available soon.
+Because this site is hosted with GitHub Pages, updating the production server is quite easy.
+
+After you have made the appropriate changes, make sure you have properly built the static site by following the "building" directions above.
+
+After you have built the static site, simply run `middleman deploy` to update the website. It might take a few minutes for the updates to show (also, make sure your cache isn't causing problems).
