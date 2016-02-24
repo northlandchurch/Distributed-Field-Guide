@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <!-- / Apple Touch -->
+    <link href='assets/images/apple-iphone.png' rel='apple-touch-icon'>
+    <link href='assets/images/apple-ipad.png' rel='apple-touch-icon' sizes='76x76'>
+    <link href='assets/images/apple-iphone@2x.png' rel='apple-touch-icon' sizes='120x120'>
+    <link href='assets/images/apple-ipad@2x.png' rel='apple-touch-icon' sizes='152x152'>
+    <!-- / Favicon -->
+    <link href='assets/images/favicon.png' rel='icon' type='image/png'>
+    <title>The Distributed Church</title>
+    <link href="assets/stylesheets/application.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class='navigation navigation--overview'>
+      <div class='cell cell--l pls prs'>
+        <div class='navigation-logo'>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452.6 61.6" enable-background="new 0 0 452.6 61.6"><g fill="#30323f"><path d="M61.4 24.8H38.6L58.8 4.6v13.6h2.7V.1H43.3v2.6h13.6L36.7 22.9V0h-2.6v27.5h27.3zM0 36.8h23L2.8 57V43.4H.1v18.2h18.2v-2.7H4.7l20.2-20.2v22.8h2.6V34.2H0zM24.9 22.9L4.7 2.7h13.6V.1H.1v18.1h2.7V4.6L23 24.8H0v2.7h27.5V0h-2.6zM58.8 43.4V57L38.6 36.8h22.8v-2.6H34.1v27.3h2.6V38.7l20.2 20.2H43.3v2.7h18.2V43.4zM83.1 40c-2.2 0-3.5-.1-5.8-.3V21.1c2.2-.2 3.7-.3 5.6-.3 7.9 0 11.5 4.1 11.5 9.5.1 5.5-3.4 9.7-11.3 9.7zm.4-15.3c-.8 0-1.1 0-1.8.1V36c.8.1 1.1.1 2.1.1 4.1 0 6-2.3 6-5.9 0-3.4-2.2-5.5-6.3-5.5zM103.3 39.9v-19h4.4v19h-4.4zM122.4 40.2c-2.1 0-4.7-.9-6.4-1.9l1.2-4c1.5 1.1 3.5 1.8 5.3 1.8 1.6 0 2.1-.7 2.1-1.7s-.5-1.7-3.4-2.8c-3.3-1.3-4.5-3.3-4.5-5.6 0-2.8 2.3-5.5 6.7-5.5 2.1 0 4.2.7 5.3 1.5l-1.1 3.9c-1.1-.8-2.8-1.6-4.2-1.6-1.6 0-2.3.8-2.3 1.5 0 1.2 1 1.7 3.3 2.7 3.5 1.5 4.6 3.2 4.6 5.6.2 3.2-2 6.1-6.6 6.1zM146.4 25v14.9H142V25h-5.7v-4h15.8v4h-5.7zM169.9 39.9l-3.2-6.2h-.8c-.6 0-1 0-1.6-.1v6.2h-4.4V21.1c1.6-.2 3.4-.3 5.6-.3 5.9 0 8.2 2.8 8.2 6.3 0 2.3-1.2 4.3-3.3 5.5l4.5 7.3h-5zM166 24.7c-.7 0-1.1 0-1.7.1V30c.6.1.9.1 1.4.1 2.1 0 3.4-1 3.4-2.9.1-1.6-1.2-2.5-3.1-2.5zM182.8 39.9v-19h4.4v19h-4.4zM202.4 40.1c-1.7 0-3.8-.2-5.7-.4V21.1c1.4-.2 3.8-.4 5.3-.4 5.5 0 8.3 2.5 8.3 5.1 0 2-1.1 3.3-3.3 4.2 2.6.8 3.8 2.3 3.8 4.5.1 3-2.7 5.6-8.4 5.6zm.6-15.5c-.8 0-1.4.1-2 .2v4c.5.1.8.1 1.6.1 2.1 0 3.2-.8 3.2-2.1.1-1.3-.9-2.2-2.8-2.2zm-.3 7.2c-.7 0-1.2 0-1.7.1v4.4c.6.1 1 .1 1.8.1 2.2 0 3.3-.9 3.3-2.3.1-1.5-1.1-2.3-3.4-2.3zM227.3 40.2c-5.1 0-7.9-2.7-7.9-8V20.9h4.4v11c0 2.7 1.1 4.3 3.7 4.3 2.5 0 3.6-1.6 3.6-4.3v-11h4.4v11.3c-.1 5.3-3.1 8-8.2 8zM253.2 25v14.9h-4.4V25h-5.7v-4h15.8v4h-5.7zM266.8 39.9v-19h12v4h-7.6v3.4h6.9v3.8h-6.9v3.7h7.6v4h-12zM293.8 40c-2.2 0-3.5-.1-5.8-.3V21.1c2.2-.2 3.7-.3 5.6-.3 7.9 0 11.5 4.1 11.5 9.5.1 5.5-3.4 9.7-11.3 9.7zm.5-15.3c-.8 0-1.1 0-1.8.1V36c.8.1 1.1.1 2.1.1 4.1 0 6-2.3 6-5.9-.1-3.4-2.3-5.5-6.3-5.5z"/><g stroke="#231F20" stroke-miterlimit="10"><path d="M325.1 39.7c-5.6 0-9.6-3.9-9.6-9.4 0-5.4 4.1-9.4 9.6-9.4 2.4 0 4.6.8 6 1.7l-.8 1.7c-1.5-.9-3.6-1.6-5.4-1.6-4.6 0-7.3 3.2-7.3 7.5s2.9 7.5 7.5 7.5c1.7 0 3.8-.7 5.4-1.6l.6 1.7c-1.5 1-3.6 1.9-6 1.9zM352.8 39.4v-8.3h-9.7v8.3h-2V21.2h2v8.1h9.7v-8.1h2v18.2h-2zM373.1 39.7c-4.2 0-6.8-2.5-6.8-6.8V21.2h2v11.5c0 3.6 2 5.2 4.8 5.2s4.9-1.6 4.9-5.2V21.2h2v11.7c0 4.2-2.8 6.8-6.9 6.8zM401.6 39.4l-4.8-7.2h-3.3v7.2h-2v-18c1.3-.2 2.7-.3 4.2-.3 4.7 0 7 2.3 7 5.5 0 2.5-1.4 4.4-4 5.3l5.3 7.6h-2.4zM396 22.9c-.8 0-1.9 0-2.5.2v7.4c.6.1 1.5.1 2.2.1 3.4 0 4.9-1.6 4.9-3.9 0-2.2-1.6-3.8-4.6-3.8zM422.3 39.7c-5.6 0-9.6-3.9-9.6-9.4 0-5.4 4.1-9.4 9.6-9.4 2.4 0 4.6.8 6 1.7l-.8 1.7c-1.5-.9-3.6-1.6-5.4-1.6-4.6 0-7.3 3.2-7.3 7.5s2.9 7.5 7.5 7.5c1.7 0 3.8-.7 5.4-1.6l.6 1.7c-1.4 1-3.5 1.9-6 1.9zM450.1 39.4v-8.3h-9.7v8.3h-2V21.2h2v8.1h9.7v-8.1h2v18.2h-2z"/></g></g></svg>
+        </div>
+        <nav class='navigation-links'>
+          <a href="#feast">9&ndash;Week Feast</a>
+          <a href="field-guide">Field&nbsp;Guide</a>
+          <a href="http://network.distributedchurch.com">DC&nbsp;Network</a>
+          <a class="btn" href="https://distributedchurchintrosession.eventbrite.com">Attend&nbsp;an&nbsp;Intro&nbsp;Session</a>
+        </nav>
+      </div>
+    </div>
+    <div class='row well'>
+      <div class='cell cell--l pbm'>
+        <h2><a href="http://imagine2016.yolklive.com">Join us online for the <span class="tce">IMAGINE</span> Summit</a><br><small>Faith and Love in the 21st Century</small></h2>
+        <div class='g'>
+          <div class='g-b g-b--m--2of5'>
+            <p class='mtm'>
+              <h3>3 Days. 7 Hosts. 9 Speakers. $0 Travel Costs.</h3>
+              IMAGINE Summit, at Orlando’s Northland Church, will be
+              <span class="tsi">streamed live online March 15-17, from 1:00 pm to
+              3:00 pm EST each day</span>.
+            </p>
+            <p class='mtm'>
+              That means you can attend from anywhere, even the comfort of your own
+              home, without the hassle and cost of flights or hotels.
+            </p>
+            <p><a class="btn" href="http://imagine2016.yolklive.com/">Register Now! $99/Person</a></p>
+          </div>
+          <div class='g-b g-b--m--3of5'>
+            <p class='mtm'>
+              <span class='ttu tce tfh'>Inovative Voices.</span>
+              &#151; We’ve gathered together some of the most creative
+              and forward-thinking voices in the faith community today—including Dr.
+              Joel Hunter, Romal Tune, Karen Kingsbury, Jeremy Courtney, and
+              Michelle Borquez.
+            </p>
+            <p class='mtm'>
+              <span class='ttu tce tfh'>Accessible &amp; Affordable.</span>
+              &#151; We’ll meet you where you are. Save hundreds
+              or even thousands of dollars in travel and lodging costs. The total
+              cost for the entire three-day conference is only $99 per person.
+            </p>
+            <p class='mtm'>
+              <span class='ttu tce tfh'>Interactive Conversation.</span>
+              &#151; Connect. Collaborate. Ask questions.
+              IMAGINE is an interactive online experience, not a one-way lecture.
+            </p>
+          </div>
+        </div>
+        <hr class='hr hr--border mbl mtl'>
+        <div class='g'>
+          <div class='g-b g-b--m--2of3'>
+            <div class='has-video mbm'>
+              <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/74J6Rzw2zD0?controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class='g-b g-b--m--1of3'>
+            <p class='mtm'>
+              <h3>Start the Journey Toward <span class="tce">Being</span> the&nbsp;Church</h3>
+              A distributed church is most simply understood as a group of
+              people following Jesus together and living out the mission
+              of Jesus in their everyday lives. When people do this
+              together they form the church right in the context of where
+              they are now.
+            </p>
+            <hr class='hr hr--border'>
+            <p><a class="btn" href="#next-steps">Next Steps</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='row row--b'>
+      <div class='cell cell--l well well--xl'>
+        <h1 class='tci'>A Church In The Image of Love</h1>
+        <div class='columns columns--l'>
+          <p>
+            At the heart of it, a distributed church is about love. It's
+            about God's love for you, and His design for you to love
+            others.
+          </p>
+          <p>
+            God has strategically placed you in the context where
+            you are right now: the web of relationships you already have;
+            the neighborhood where you already live; the place where you
+            already work. A distributed church is a way to bring the
+            church, and thus the love of God, to those people.
+          </p>
+          <p>
+            A distributed church is also about the way God has uniquely
+            created you - with specific gifts for specific purposes - to
+            help others experience His love. Your abilities, the way you
+            think, even the things you struggle with, all point toward
+            God's design and deliberate plan. You have been designed for
+            a mission unlike any other in this world. It's a mission that
+            you can't accomplish without God's power, or without other
+            Christians alongside you.
+          </p>
+          <p>
+            Are you interested in learning more? We would love to help
+            you. Together we can form the church outside the walls of a
+            building and bring God's love to the world.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class='row row--c' id='next-steps'>
+      <div class='cell cell--l well well--xl'>
+        <h1 class='tci'>Next Steps</h1>
+        <div class='mbl tac'>
+          <div class='number tac' href='#'>1.</div>
+          <h4 class='tci tsm'>
+            Intro to Distributing the Church
+          </h4>
+          <div class='cell'>
+            <p class='tci'>
+              Discover God’s plan to show the world His love through you.
+              Intro Sessions are 60 minute sessions to help you discover
+              more about how to live out your faith in this culture of
+              connection. You’ll learn what a distributed church is and how
+              to begin forming one in your context. Intro to Distributing
+              the Church is offered online&nbsp;and&nbsp;in&nbsp;person.
+            </p>
+            <p>
+              <a class="btn" href="https://distributedchurchintrosession.eventbrite.com">Attend an Intro Session</a>
+            </p>
+          </div>
+        </div>
+        <hr class='hr hr--subdue'>
+        <div class='mbl tac'>
+          <div class='number tac' href='#'>2.</div>
+          <h4 class='tci tsm'>
+            Read the Field Guide
+          </h4>
+          <div class='cell'>
+            <p class='tci'>
+              Read the Field Guide with friends and family to begin to map
+              out a plan. The Field Guide is full of the basic philosophy,
+              practical steps, and key questions to direct you as you form
+              your existing relationships into a&nbsp;distributed&nbsp;church.
+            </p>
+            <p>
+              <a class="btn" href="field-guide">Read the Field Guide</a>
+            </p>
+          </div>
+        </div>
+        <hr class='hr hr--subdue'>
+        <div class='mbl tac'>
+          <div class='number tac' href='#'>3.</div>
+          <h4 class='tci tsm'>
+            Launch Community
+          </h4>
+          <div class='cell'>
+            <p class='tci'>
+              Connect with other people on this journey for training and
+              support. A Launch Community will link you with a mentor that
+              can provide the training and encouragement you need as you
+              get started. It also will connect you with other people
+              starting distributed churches.
+            </p>
+            <p>
+              <a class="btn" href="https://northlandchurch.wufoo.com/forms/w1omfxzh0wdvz2c/">Join a Community</a>
+            </p>
+          </div>
+        </div>
+        <hr class='hr hr--subdue'>
+        <div class='mbl tac'>
+          <div class='number tac' href='#'>4.</div>
+          <h4 class='tci tsm'>
+            Be the Church
+          </h4>
+          <div class='cell'>
+            <p class='tci'>
+              Distribute the church everywhere, every day. Join the
+              movement of people forming the church outside of a building,
+              in the midst of their everyday lives. Already on this
+              journey? Great! Let us know so that we can stay connected&nbsp;with&nbsp;you.
+            </p>
+            <p>
+              <a class="btn" href="https://northlandchurch.wufoo.com/forms/wzsl6k21omlydn/">Stay Connected</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='row row--b'>
+      <div class='cell cell--l well well--xl'>
+        <h1 class='mbf tci'>
+          1st Church Snapshot
+        </h1>
+        <h2 class='mts tci'>
+          Acts 2:42-47
+        </h2>
+        <div class='columns columns--l'>
+          <p>
+            They devoted themselves to the apostles’ teaching and to
+            fellowship, to the breaking of bread and to prayer. Everyone
+            was filled with awe at the many wonders and signs performed
+            by the apostles. All the believers were together and had
+            everything in common. They sold property and possessions to
+            give to anyone who had need. Every day they continued to meet
+            together in the temple courts. They broke bread in their homes
+            and ate together with glad and sincere hearts, praising God
+            and enjoying the favor of all the people. And the Lord added
+            to their number daily those who were being saved.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class='row row--a' id='feast'>
+      <div class='cell cell--l well well--xl'>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-524 526 1200 1200" enable-background="new -524 526 1200 1200" height="150" width="150" class="db mbs mhc">
+            <path fill="#C63136" d="M76 526c-331.2 0-600 268.8-600 600s268.8 600 600 600 600-268.8 600-600S407.2 526 76 526z"/>
+            <path fill="#A52029" d="M675.2 1146L229.6 701.2l-39.2 189.6L27.2 727.6 12 774l-46.4-46.4-13.6 49.6-49.6-49.6-10.4-4v152.8l43.2 57.6v520l-13.6 56.8 212 212c296.8-28 532-273.6 541.6-576.8z"/>
+            <g fill="#fff">
+                <path d="M32.8 739.6c0-8.8-7.2-16-16-16s-16 7.2-16 16V834c0 8.8-7.2 16-16 16s-16-7.2-16-16v-96c0-8.8-7.2-16-16-16s-16 7.2-16 16v96c0 8.8-7.2 16-16 16s-16-7.2-16-16v-94.4c0-8.8-7.2-16-16-16s-16 7.2-16 16v143.2c0 66.4 48 61.6 48 143.2v245.6c0 43.2-16 128-16 128v80c0 26.4 21.6 48 48 48s48-21.6 48-48v-80c0-56-16-84.8-16-128V1026c0-82.4 44-76.8 44-143.2V739.6h4zM241.6 1273.2V731.6c0-30.4-16-36.8-32-32-16.8 4.8-63.2 63.2-63.2 239.2 0 79.2 32 103.2 32 159.2v174.4c0 41.6-16 127.2-16 127.2v80c0 26.4 21.6 48 48 48s48-21.6 48-48c0 0-.8-22.4-.8-78.4s-16-84.8-16-128z"/>
+            </g>
+        </svg>
+        <h1 class='mbf mtm tci'>Experience a Church in Formation</h1>
+        <h2 class='mts tci'>9-Week Feast</h2>
+        <hr class='hr hr--subdue mbl mtl'>
+        <div class='has-video'>
+          <iframe class="video" width="560" height="315" src="//www.youtube.com/embed/Zn-Ilinsgls?controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <hr class='hr hr--subdue mbl mtl'>
+        <div class='g tci'>
+          <div class='g-b g-b--m--1of3'>
+            <h2 class='mbxs'>A meal</h2>
+            <h2 class='mbxs'>A Scripture</h2>
+            <h2>A Question</h2>
+          </div>
+          <div class='g-b g-b--m--2of3'>
+            <p>
+              Band together with a group of friends or neighbors and for the
+              next 9 weeks commit to get together weekly for a meal. As you eat,
+              read one scripture and discuss&nbsp;one&nbsp;question.
+            </p>
+            <p class='mbf'>
+              Discover the extraordinary thing that can happen when a group of people
+              intentionally invest in one another for an extended period&nbsp;of&nbsp;time.
+            </p>
+          </div>
+        </div>
+        <hr class='hr hr--subdue mbf mtl'>
+        <div class='cell cell--s tac tci'>
+          <h2 class='mtm tsl'>Starting the 9&#8209;Week&nbsp;Feast?</h2>
+          <p>
+            Let us know. We’ll email you the scripture and question each week and
+            check in to see how it&nbsp;is&nbsp;going.
+          </p>
+          <a class="btn" href="https://northlandchurch.wufoo.com/forms/9week-feast/">Get Started</a>
+        </div>
+      </div>
+    </div>
+    <div class='row row--b'>
+      <div class='cell cell--l well well--xl'>
+        <h1 class='tci'>Read the Book</h1>
+        <div class='bucket bucket--flag'>
+          <div class='bucket-media paper'>
+            PDF
+            <span>190 Pages</span>
+          </div>
+          <div class='bucket-content'>
+            <h3>CHURCH DISTRIBUTED<br>How the Church Can Thrive in the Coming Era of Connection</h3>
+            <p>
+              In this book by Dr. Joel C. Hunter, learn how to partner effectively with Christians who are not like you, as well as with Christians who have the same vision as you; Build associations with Christians who want to develop lasting relationships for the work of the Gospel; Cooperate with non-Christians for the good of everyone.
+            </p>
+            <a class='btn' download='The-Distributed-Church-Book.pdf' href='../assets/downloads/The-Distributed-Church-Book.pdf'>Download the PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='cell cell--l well well--xl'>
+        <h1>Connect</h1>
+        <div class='g tac'>
+          <div class='g-b g-b--m--1of3'>
+            <h4 class='tsm'>Talk with Someone</h4>
+            <p class='tss'>
+              Have some questions and think a conversation would clear
+              some things up? We’d be happy to talk with you.
+            </p>
+            <p><a class="btn db tac tss" href="https://northlandchurch.wufoo.com/forms/w1doyl9f0eahloc/">Talk With Someone</a></p>
+            <hr class='hr hr--border2 rhl'>
+          </div>
+          <div class='g-b g-b--m--1of3'>
+            <h4 class='tsm'>Attend Overview Session</h4>
+            <p class='tss'>
+              This is the best place to get your bearings in this new way
+              (or really old way) of living&nbsp;as&nbsp;the&nbsp;church.
+            </p>
+            <p><a class="btn db tac tss" href="https://distributedchurchintrosession.eventbrite.com">Attend Session</a></p>
+            <hr class='hr hr--border2 rhl'>
+          </div>
+          <div class='g-b g-b--m--1of3'>
+            <h4 class='tsm'>Join a Launch Community</h4>
+            <p class='tss'>
+              Ready to get started?
+              <br>
+              We want to come alongside
+              <br>
+              you as you do.
+            </p>
+            <p><a class="btn db tac tss" href="https://northlandchurch.wufoo.com/forms/w1omfxzh0wdvz2c/">Join a Community</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class='footer'>
+      <a class='footer-logo dib' href='/'>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203 160.1" enable-background="new 0 0 203 160.1" fill="#30323f"><path d="M148.6 37.4h-34.3l30.4-30.5v20.5h4V.1h-27.3v4h20.5l-30.5 30.4V0h-4v41.4h41.2zm-92.4 18h34.6L60.4 85.9V65.3h-4v27.4h27.3v-4H63.2l30.4-30.5v34.5h4V51.4H56.2zm37.4-20.9L63.2 4.1h20.5v-4H56.4v27.3h4V6.9l30.4 30.5H56.2v4h41.4V0h-4zm51.1 30.8v20.6l-30.4-30.5h34.3v-4h-41.2v41.3h4V58.2l30.5 30.5h-20.5v4h27.3V65.3zm-88.4 91.4c-.9.5-2 .8-2.9.8-2.2 0-3.7-1.4-3.7-3.6 0-2.3 1.4-3.7 3.6-3.7.9 0 1.9.3 2.8.8l.4.2.9-2.3-.3-.2c-1.1-.7-2.5-1.1-3.8-1.1-3.7 0-6.4 2.6-6.4 6.2s2.7 6.2 6.4 6.2c1.3 0 2.8-.4 3.9-1.1l.2-.2-.8-2.3-.3.3zm18.8-4.1h-4.5v-4.7H68v12h2.6v-4.8h4.5v4.8h2.6v-12h-2.6zm19.9 2.5c0 1.7-.7 2.5-2.2 2.5-1.5 0-2.2-.8-2.2-2.5v-7.2H88v7.3c0 3.1 1.8 4.9 4.8 4.9s4.9-1.9 4.9-4.9v-7.3H95v7.2zm20.6-3.3c0-2.4-1.9-3.9-5-3.9-1 0-1.9.1-3 .2h-.3v11.8h2.6v-4.1h1.2l2.4 4h3.1l-3.1-4.7c1.3-.6 2.1-1.9 2.1-3.3zm-2.8.1c0 1.1-.7 1.7-2.2 1.7h-.7v-3.2h.9c1.3-.1 2 .5 2 1.5zm21.8 4.8c-.9.5-2 .8-2.9.8-2.2 0-3.7-1.4-3.7-3.6 0-2.3 1.4-3.7 3.6-3.7.9 0 1.9.3 2.8.8l.4.2.9-2.3-.3-.2c-1.1-.7-2.5-1.1-3.8-1.1-3.7 0-6.4 2.6-6.4 6.2s2.7 6.2 6.4 6.2c1.3 0 2.8-.4 3.9-1.1l.2-.2-.8-2.3-.3.3zm18.8-4.1h-4.5v-4.7h-2.6v12h2.6v-4.8h4.5v4.8h2.6v-12h-2.6zm-149-33.9c-1.5 0-2.7.1-4.4.2h-.1v14.6H0c1.8.2 2.8.2 4.5.2 5.7 0 8.9-2.8 8.9-7.7.1-4.5-3.3-7.3-9-7.3zm5.3 7.4c0 2-.8 4.5-4.5 4.5-.7 0-1 0-1.5-.1V122c.5-.1.8-.1 1.3-.1 3 0 4.7 1.5 4.7 4.2zm11.9-7.3h3.6v14.9h-3.6zm18.8 6c-1.8-.8-2.5-1.1-2.5-2 0-.5.4-1.1 1.7-1.1 1 0 2.4.6 3.2 1.2l.1.1.9-3.2h-.1c-.8-.6-2.5-1.2-4.2-1.2-3.6 0-5.3 2.2-5.3 4.3 0 2 1.2 3.4 3.6 4.4 2.2.9 2.6 1.4 2.6 2.1 0 .8-.5 1.2-1.6 1.2-1.3 0-2.9-.5-4.1-1.4l-.1-.1-1 3.3h.1c1.4.9 3.4 1.5 5 1.5 3.7 0 5.3-2.3 5.3-4.7.1-2-1-3.3-3.6-4.4zm11.3-2.7h4.4v11.6h3.6v-11.6h4.4v-3.3H51.7zm32.3 1.6c0-3.2-2.4-5-6.5-5-1.5 0-2.9.1-4.3.2h-.1v14.7h3.6v-4.8h1.7l2.5 4.8H85l-3.5-5.7c1.6-.9 2.5-2.5 2.5-4.2zm-3.7.1c0 1.4-.9 2.2-2.6 2.2-.4 0-.6 0-1-.1V122c.4-.1.7-.1 1.2-.1 1.5 0 2.4.7 2.4 1.9zm13.7-5h3.6v14.9H94zm22.1 7.2c1.6-.7 2.4-1.8 2.4-3.3 0-1.1-.6-2.1-1.7-2.8-1.2-.8-2.9-1.2-4.9-1.2-1.2 0-3.1.2-4.1.3h-.1v14.5h.1c1.5.2 3.2.3 4.4.3 3.3 0 6.7-1.4 6.7-4.4 0-1.7-.9-2.8-2.8-3.4zm-4.9 1.4c.3 0 .7-.1 1.2-.1 1.2 0 2.6.3 2.6 1.7 0 1.1-.8 1.7-2.5 1.7-.6 0-.9 0-1.3-.1v-3.2zm1.2-2.5c-.6 0-.9 0-1.2-.1v-2.9c.5-.1.9-.1 1.5-.1 1.3 0 2.1.6 2.1 1.5 0 1.3-1.3 1.6-2.4 1.6zm24.4 2.5c0 1.5-.5 3.3-2.7 3.3-1.2 0-2.7-.6-2.7-3.3v-8.6h-3.6v8.8c0 4.1 2.2 6.3 6.3 6.3s6.4-2.2 6.4-6.3v-8.8h-3.6v8.6zm11.7-5.3h4.4v11.6h3.6v-11.6h4.4v-3.3h-12.4zm21.4 11.6h9.5v-3.3h-5.9v-2.7h5.4v-3.1h-5.4v-2.5h5.9v-3.3h-9.5zm24.1-15c-1.5 0-2.7.1-4.4.2h-.1v14.6h.1c1.8.2 2.8.2 4.5.2 5.7 0 8.9-2.8 8.9-7.7 0-4.5-3.3-7.3-9-7.3zm5.2 7.4c0 2-.8 4.5-4.5 4.5-.7 0-1 0-1.5-.1V122c.5-.1.8-.1 1.3-.1 3 0 4.7 1.5 4.7 4.2z"/></svg>
+      </a>
+      <p class='footer-copyright'>&copy; 2015 Northland, A Church Distributed</p>
+    </footer>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-966214-26', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/javascripts/application.js" type="text/javascript"></script>
+  </body>
+</html>
