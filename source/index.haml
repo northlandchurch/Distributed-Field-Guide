@@ -3,7 +3,7 @@
     .navigation-logo
       = partial '/assets/images/logo-horizontal.svg'
     %nav.navigation-links
-      = link_to "9&ndash;Week Feast", "#feast"
+      = link_to "9&ndash;Week Prayer", "#prayer"
       = link_to "Field&nbsp;Guide", "field-guide"
       = link_to "DC&nbsp;Network", "http://network.distributedchurch.com", class: 'btn'
 
@@ -137,35 +137,40 @@
         and enjoying the favor of all the people. And the Lord added
         to their number daily those who were being saved.
 
-.row.row--a#feast
+.row.row--a#prayer
   .cell.cell--l.well.well--xl
-    = partial '/assets/images/feast.svg'
+    //= partial '/assets/images/feast.svg'
+    %image.db.mbs.mhc{src: "../assets/images/heart_box.png"}
     %h1.mbf.mtm.tci Experience a Church in Formation
-    %h2.mts.tci 9-Week Feast
+    %h2.mts.tci 9-Week Prayer
     %hr.hr.hr--subdue.mbl.mtl
     .has-video
       <iframe class="video" width="560" height="315" src="//www.youtube.com/embed/Zn-Ilinsgls?controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
     %hr.hr.hr--subdue.mbl.mtl
     .g.tci
       .g-b.g-b--m--1of3
-        %h2.mbxs A meal
-        %h2.mbxs A Scripture
-        %h2 A Question
+        %h2 A prayer focus
+        %h2 A Scripture
+        %h2 A Thought
       .g-b.g-b--m--2of3
         %p
-          Band together with a group of friends or neighbors and for the
-          next 9 weeks commit to get together weekly for a meal. As you eat,
-          read one scripture and discuss&nbsp;one&nbsp;question.
+          Join together with a group of friends, coworkers, or family and commit for 9-weeks to pray for one another, your communities, and our world. Each week you will receive a prayer focus, a Scripture, and a reflective thought to guide your group in prayer.
         %p.mbf
-          Discover the extraordinary thing that can happen when a group of people
-          intentionally invest in one another for an extended period&nbsp;of&nbsp;time.
+          Discover the extraordinary thing that can happen when a group of people 
+          intentionally pray for one another for an extended period of time.
     %hr.hr.hr--subdue.mbf.mtl
     .cell.cell--s.tac.tci
-      %h2.mtm.tsl Starting the 9&#8209;Week&nbsp;Feast?
+      %h2.mtm.tsl Starting the 9&#8209;Week&nbsp;Prayer?
       %p
-        Let us know. We’ll email you the scripture and question each week and
-        check in to see how it&nbsp;is&nbsp;going.
-      = link_to 'Get Started', 'https://northlandchurch.wufoo.com/forms/9week-feast/',  class: "btn"
+        Let us know. We'll email you the prayer focus, Scripture, and reflective thought each week and 
+        check in with you to see how it&nbsp;is&nbsp;going.
+      = link_to 'Get Started', 'https://northlandchurch.wufoo.com/forms/9week-prayer/',  class: "btn"
+    %hr.hr.hr--subdue.mbf.mtl
+    .cell.cell--s.tac.tci
+      %h2.mtm.tsl Finishing the 9&#8209;Weeks and want to keep going?
+      %p
+        Great! Let us know and we'll get you some great resources for the next phase of the journey.
+      = mail_to 'hello@northlandchurch.net', "Email Us",  :subject=>"Next Steps after Nine Week Prayer", class: "btn"
 
 
 .row.row--b
