@@ -2,11 +2,25 @@
 
 To get the field guide source code set up on your local machine, clone this repo and follow these steps:
 
+## Bundler
+
+[Bundler](https://bundler.io/) manages the dependencies of a Ruby project. You will need this gem installed on your machine before continuing with the next instructions.
+
 ## Middleman
 
-[Middleman](http://middlemanapp.com/) is a static site builder that is built on top of Ruby.
+[Middleman](https://middlemanapp.com/) is a static site builder that is built on top of Ruby.
 
-To get the middleman application running on your local, first run `bundle install` and the begin the server with `middleman server`. The local instance should then be available at `http://localhost:4567`, unless your settings are different.
+Using `bundler`, we can install `middleman` and its dependencies by running the following command:
+
+`bundle install --path vendor/bundle`
+
+To get the middleman application running on your local, start the server with the following command:
+
+`bundle exec middleman server`.
+
+The local instance should then be available at `http://localhost:4567`, unless your settings are different.
+
+If you encounter issues, verify that you are using the version of middleman installed within `./vendor/bundle`, not a version of `middleman` that you may have installed globally in a previous project.
 
 ### Source Code
 
